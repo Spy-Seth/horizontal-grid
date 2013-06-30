@@ -1,0 +1,405 @@
+@columnBaseUnitWidth:1em;
+@colomnPaddingWideScreen:2em;
+@colomnPaddingSmallScreen:1em;
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+
+    font: 14px/21px "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+
+body {
+    position: relative;
+    width: 9999px;
+    height: 100%;
+    overflow: hidden;
+}
+
+.column {
+    position: relative;
+    width: 20 * @columnBaseUnitWidth;
+    height: 100%;
+    display: inline-block;
+    float: left;
+    padding: 0 @colomnPaddingWideScreen;
+    overflow: hidden;
+    text-align: justify;
+}
+ 
+ 
+ // Calcule la largeur d'une colonne en fonction du nombre d'unit� (@size) demand�.
+.getColumnWidth (@size) {
+    width: @size * @columnBaseUnitWidth;
+}
+
+
+// Calcule la marge n�gative � appliquer � une colonne qui passe de type .hoverPrevious.
+.calculateHoverPreviousMarginLeft (@size, @columnPadding) {
+    margin-left: 0 - (@size * @columnBaseUnitWidth) - (2 * @columnPadding);
+}
+
+
+
+/* Computer screen (768px and highter) */
+@media only screen and (min-width: 768px) {
+    .column.size-1   { .getColumnWidth(1); }
+    .column.size-2   { .getColumnWidth(2); }
+    .column.size-3   { .getColumnWidth(3); }
+    .column.size-4   { .getColumnWidth(4); }
+    .column.size-5   { .getColumnWidth(5); }
+    .column.size-6   { .getColumnWidth(6); }
+    .column.size-7   { .getColumnWidth(7); }
+    .column.size-8   { .getColumnWidth(8); }
+    .column.size-9   { .getColumnWidth(9); }
+    .column.size-10  { .getColumnWidth(10); }
+    .column.size-11  { .getColumnWidth(11); }
+    .column.size-12  { .getColumnWidth(12); }
+    .column.size-13  { .getColumnWidth(13); }
+    .column.size-14  { .getColumnWidth(14); }
+    .column.size-15  { .getColumnWidth(15); }
+    .column.size-16  { .getColumnWidth(16); }
+    .column.size-17  { .getColumnWidth(17); }
+    .column.size-18  { .getColumnWidth(18); }
+    .column.size-19  { .getColumnWidth(19); }
+    .column.size-20  { .getColumnWidth(20); }
+    .column.size-21  { .getColumnWidth(21); }
+    .column.size-22  { .getColumnWidth(22); }
+    .column.size-23  { .getColumnWidth(23); }
+    .column.size-24  { .getColumnWidth(24); }
+    .column.size-25  { .getColumnWidth(25); }
+    .column.size-26  { .getColumnWidth(26); }
+    .column.size-27  { .getColumnWidth(27); }
+    .column.size-28  { .getColumnWidth(28); }
+    .column.size-29  { .getColumnWidth(29); }
+    .column.size-30  { .getColumnWidth(30); }
+    .column.size-31  { .getColumnWidth(31); }
+    .column.size-32  { .getColumnWidth(32); }
+    .column.size-33  { .getColumnWidth(33); }
+    .column.size-34  { .getColumnWidth(34); }
+    .column.size-35  { .getColumnWidth(35); }
+    .column.size-36  { .getColumnWidth(36); }
+    .column.size-37  { .getColumnWidth(37); }
+    .column.size-38  { .getColumnWidth(38); }
+    .column.size-39  { .getColumnWidth(39); }
+    .column.size-40  { .getColumnWidth(40); }
+    .column.size-41  { .getColumnWidth(41); }
+    .column.size-42  { .getColumnWidth(42); }
+    .column.size-43  { .getColumnWidth(43); }
+    .column.size-44  { .getColumnWidth(44); }
+    .column.size-45  { .getColumnWidth(45); }
+    .column.size-46  { .getColumnWidth(46); }
+    .column.size-47  { .getColumnWidth(47); }
+    .column.size-48  { .getColumnWidth(48); }
+    .column.size-49  { .getColumnWidth(49); }
+    .column.size-50  { .getColumnWidth(50); }
+    .column.size-51  { .getColumnWidth(51); }
+    .column.size-52  { .getColumnWidth(52); }
+    .column.size-53  { .getColumnWidth(53); }
+    .column.size-54  { .getColumnWidth(54); }
+    .column.size-55  { .getColumnWidth(55); }
+    .column.size-56  { .getColumnWidth(56); }
+    .column.size-57  { .getColumnWidth(57); }
+    .column.size-58  { .getColumnWidth(58); }
+    .column.size-59  { .getColumnWidth(59); }
+    .column.size-60  { .getColumnWidth(60); }
+    .column.size-61  { .getColumnWidth(61); }
+    .column.size-62  { .getColumnWidth(62); }
+    .column.size-63  { .getColumnWidth(63); }
+    .column.size-64  { .getColumnWidth(64); }
+    .column.size-65  { .getColumnWidth(65); }
+    .column.size-66  { .getColumnWidth(66); }
+    .column.size-67  { .getColumnWidth(67); }
+    .column.size-68  { .getColumnWidth(68); }
+    .column.size-69  { .getColumnWidth(69); }
+    .column.size-70  { .getColumnWidth(70); }
+    .column.size-71  { .getColumnWidth(71); }
+    .column.size-72  { .getColumnWidth(72); }
+    .column.size-73  { .getColumnWidth(73); }
+    .column.size-74  { .getColumnWidth(74); }
+    .column.size-75  { .getColumnWidth(75); }
+    .column.size-76  { .getColumnWidth(76); }
+    .column.size-77  { .getColumnWidth(77); }
+    .column.size-78  { .getColumnWidth(78); }
+    .column.size-79  { .getColumnWidth(79); }
+    .column.size-80  { .getColumnWidth(80); }
+    .column.size-81  { .getColumnWidth(81); }
+    .column.size-82  { .getColumnWidth(82); }
+    .column.size-83  { .getColumnWidth(83); }
+    .column.size-84  { .getColumnWidth(84); }
+    .column.size-85  { .getColumnWidth(85); }
+    .column.size-86  { .getColumnWidth(86); }
+    .column.size-87  { .getColumnWidth(87); }
+    .column.size-88  { .getColumnWidth(88); }
+    .column.size-89  { .getColumnWidth(89); }
+    .column.size-90  { .getColumnWidth(90); }
+    .column.size-91  { .getColumnWidth(91); }
+    .column.size-92  { .getColumnWidth(92); }
+    .column.size-93  { .getColumnWidth(93); }
+    .column.size-94  { .getColumnWidth(94); }
+    .column.size-95  { .getColumnWidth(95); }
+    .column.size-96  { .getColumnWidth(96); }
+    .column.size-97  { .getColumnWidth(97); }
+    .column.size-98  { .getColumnWidth(98); }
+    .column.size-99  { .getColumnWidth(99); }
+    .column.size-100 { .getColumnWidth(100); }
+    .column.size-101 { .getColumnWidth(101); }
+    .column.size-102 { .getColumnWidth(102); }
+    .column.size-103 { .getColumnWidth(103); }
+    .column.size-104 { .getColumnWidth(104); }
+    .column.size-105 { .getColumnWidth(105); }
+    .column.size-106 { .getColumnWidth(106); }
+    .column.size-107 { .getColumnWidth(107); }
+    .column.size-108 { .getColumnWidth(108); }
+    .column.size-109 { .getColumnWidth(109); }
+    .column.size-110 { .getColumnWidth(110); }
+    .column.size-111 { .getColumnWidth(111); }
+    .column.size-112 { .getColumnWidth(112); }
+    .column.size-113 { .getColumnWidth(113); }
+    .column.size-114 { .getColumnWidth(114); }
+    .column.size-115 { .getColumnWidth(115); }
+    .column.size-116 { .getColumnWidth(116); }
+    .column.size-117 { .getColumnWidth(117); }
+    .column.size-118 { .getColumnWidth(118); }
+    .column.size-119 { .getColumnWidth(119); }
+    .column.size-120 { .getColumnWidth(120); }
+    .column.size-121 { .getColumnWidth(121); }
+    .column.size-122 { .getColumnWidth(122); }
+    .column.size-123 { .getColumnWidth(123); }
+    .column.size-124 { .getColumnWidth(124); }
+    .column.size-125 { .getColumnWidth(125); }
+    .column.size-126 { .getColumnWidth(126); }
+    .column.size-127 { .getColumnWidth(127); }
+    .column.size-128 { .getColumnWidth(128); }
+    .column.size-129 { .getColumnWidth(129); }
+    .column.size-130 { .getColumnWidth(130); }
+    .column.size-131 { .getColumnWidth(131); }
+    .column.size-132 { .getColumnWidth(132); }
+    .column.size-133 { .getColumnWidth(133); }
+    .column.size-134 { .getColumnWidth(134); }
+    .column.size-135 { .getColumnWidth(135); }
+    .column.size-136 { .getColumnWidth(136); }
+    .column.size-137 { .getColumnWidth(137); }
+    .column.size-138 { .getColumnWidth(138); }
+    .column.size-139 { .getColumnWidth(139); }
+    .column.size-140 { .getColumnWidth(140); }
+    .column.size-141 { .getColumnWidth(141); }
+    .column.size-142 { .getColumnWidth(142); }
+    .column.size-143 { .getColumnWidth(143); }
+    .column.size-144 { .getColumnWidth(144); }
+    .column.size-145 { .getColumnWidth(145); }
+    .column.size-146 { .getColumnWidth(146); }
+    .column.size-147 { .getColumnWidth(147); }
+    .column.size-148 { .getColumnWidth(148); }
+    .column.size-149 { .getColumnWidth(149); }
+    .column.size-150 { .getColumnWidth(150); }
+    .column.size-151 { .getColumnWidth(151); }
+    .column.size-152 { .getColumnWidth(152); }
+    .column.size-153 { .getColumnWidth(153); }
+    .column.size-154 { .getColumnWidth(154); }
+    .column.size-155 { .getColumnWidth(155); }
+    .column.size-156 { .getColumnWidth(156); }
+    .column.size-157 { .getColumnWidth(157); }
+    .column.size-158 { .getColumnWidth(158); }
+    .column.size-159 { .getColumnWidth(159); }
+    .column.size-160 { .getColumnWidth(160); }
+    .column.size-161 { .getColumnWidth(161); }
+    .column.size-162 { .getColumnWidth(162); }
+    .column.size-163 { .getColumnWidth(163); }
+    .column.size-164 { .getColumnWidth(164); }
+    .column.size-165 { .getColumnWidth(165); }
+    .column.size-166 { .getColumnWidth(166); }
+    .column.size-167 { .getColumnWidth(167); }
+    .column.size-168 { .getColumnWidth(168); }
+    .column.size-169 { .getColumnWidth(169); }
+    .column.size-170 { .getColumnWidth(170); }
+    .column.size-171 { .getColumnWidth(171); }
+    .column.size-172 { .getColumnWidth(172); }
+    .column.size-173 { .getColumnWidth(173); }
+    .column.size-174 { .getColumnWidth(174); }
+    .column.size-175 { .getColumnWidth(175); }
+    .column.size-176 { .getColumnWidth(176); }
+    .column.size-177 { .getColumnWidth(177); }
+    .column.size-178 { .getColumnWidth(178); }
+    .column.size-179 { .getColumnWidth(179); }
+    .column.size-180 { .getColumnWidth(180); }
+    .column.size-181 { .getColumnWidth(181); }
+    .column.size-182 { .getColumnWidth(182); }
+    .column.size-183 { .getColumnWidth(183); }
+    .column.size-184 { .getColumnWidth(184); }
+    .column.size-185 { .getColumnWidth(185); }
+    .column.size-186 { .getColumnWidth(186); }
+    .column.size-187 { .getColumnWidth(187); }
+    .column.size-188 { .getColumnWidth(188); }
+    .column.size-189 { .getColumnWidth(189); }
+    .column.size-190 { .getColumnWidth(190); }
+    .column.size-191 { .getColumnWidth(191); }
+    .column.size-192 { .getColumnWidth(192); }
+    .column.size-193 { .getColumnWidth(193); }
+    .column.size-194 { .getColumnWidth(194); }
+    .column.size-195 { .getColumnWidth(195); }
+    .column.size-196 { .getColumnWidth(196); }
+    .column.size-197 { .getColumnWidth(197); }
+    .column.size-198 { .getColumnWidth(198); }
+    .column.size-199 { .getColumnWidth(199); }
+    .column.size-200 { .getColumnWidth(200); }
+    .column.size-201 { .getColumnWidth(201); }
+    .column.size-202 { .getColumnWidth(202); }
+    .column.size-203 { .getColumnWidth(203); }
+    .column.size-204 { .getColumnWidth(204); }
+    .column.size-205 { .getColumnWidth(205); }
+    .column.size-206 { .getColumnWidth(206); }
+    .column.size-207 { .getColumnWidth(207); }
+    .column.size-208 { .getColumnWidth(208); }
+    .column.size-209 { .getColumnWidth(209); }
+    .column.size-210 { .getColumnWidth(210); }
+    .column.size-211 { .getColumnWidth(211); }
+    .column.size-212 { .getColumnWidth(212); }
+    .column.size-213 { .getColumnWidth(213); }
+    .column.size-214 { .getColumnWidth(214); }
+    .column.size-215 { .getColumnWidth(215); }
+    .column.size-216 { .getColumnWidth(216); }
+    .column.size-217 { .getColumnWidth(217); }
+    .column.size-218 { .getColumnWidth(218); }
+    .column.size-219 { .getColumnWidth(219); }
+    .column.size-220 { .getColumnWidth(220); }
+    .column.size-221 { .getColumnWidth(221); }
+    .column.size-222 { .getColumnWidth(222); }
+    .column.size-223 { .getColumnWidth(223); }
+    .column.size-224 { .getColumnWidth(224); }
+    .column.size-225 { .getColumnWidth(225); }
+    .column.size-226 { .getColumnWidth(226); }
+    .column.size-227 { .getColumnWidth(227); }
+    .column.size-228 { .getColumnWidth(228); }
+    .column.size-229 { .getColumnWidth(229); }
+    .column.size-230 { .getColumnWidth(230); }
+    .column.size-231 { .getColumnWidth(231); }
+    .column.size-232 { .getColumnWidth(232); }
+    .column.size-233 { .getColumnWidth(233); }
+    .column.size-234 { .getColumnWidth(234); }
+    .column.size-235 { .getColumnWidth(235); }
+    .column.size-236 { .getColumnWidth(236); }
+    .column.size-237 { .getColumnWidth(237); }
+    .column.size-238 { .getColumnWidth(238); }
+    .column.size-239 { .getColumnWidth(239); }
+    .column.size-240 { .getColumnWidth(240); }
+    .column.size-241 { .getColumnWidth(241); }
+    .column.size-242 { .getColumnWidth(242); }
+    .column.size-243 { .getColumnWidth(243); }
+    .column.size-244 { .getColumnWidth(244); }
+    .column.size-245 { .getColumnWidth(245); }
+    .column.size-246 { .getColumnWidth(246); }
+    .column.size-247 { .getColumnWidth(247); }
+    .column.size-248 { .getColumnWidth(248); }
+    .column.size-249 { .getColumnWidth(249); }
+    .column.size-250 { .getColumnWidth(250); }
+}
+
+/* Wide conputer screen */
+@media only screen and (min-width: 960px) {
+    .column.hoverPrevious.size-1   { .calculateHoverPreviousMarginLeft(1,   @colomnPaddingWideScreen); }
+    .column.hoverPrevious.size-5   { .calculateHoverPreviousMarginLeft(5,   @colomnPaddingWideScreen); }
+    .column.hoverPrevious.size-10  { .calculateHoverPreviousMarginLeft(10,  @colomnPaddingWideScreen); }
+    .column.hoverPrevious.size-15  { .calculateHoverPreviousMarginLeft(15,  @colomnPaddingWideScreen); }
+    .column.hoverPrevious.size-20  { .calculateHoverPreviousMarginLeft(20,  @colomnPaddingWideScreen); }
+    .column.hoverPrevious.size-25  { .calculateHoverPreviousMarginLeft(25,  @colomnPaddingWideScreen); }
+    .column.hoverPrevious.size-30  { .calculateHoverPreviousMarginLeft(30,  @colomnPaddingWideScreen); }
+    .column.hoverPrevious.size-35  { .calculateHoverPreviousMarginLeft(35,  @colomnPaddingWideScreen); }
+    .column.hoverPrevious.size-40  { .calculateHoverPreviousMarginLeft(40,  @colomnPaddingWideScreen); }
+    .column.hoverPrevious.size-45  { .calculateHoverPreviousMarginLeft(45,  @colomnPaddingWideScreen); }
+    .column.hoverPrevious.size-50  { .calculateHoverPreviousMarginLeft(50,  @colomnPaddingWideScreen); }
+    .column.hoverPrevious.size-55  { .calculateHoverPreviousMarginLeft(55,  @colomnPaddingWideScreen); }
+    .column.hoverPrevious.size-60  { .calculateHoverPreviousMarginLeft(60,  @colomnPaddingWideScreen); }
+    .column.hoverPrevious.size-65  { .calculateHoverPreviousMarginLeft(65,  @colomnPaddingWideScreen); }
+    .column.hoverPrevious.size-70  { .calculateHoverPreviousMarginLeft(70,  @colomnPaddingWideScreen); }
+    .column.hoverPrevious.size-75  { .calculateHoverPreviousMarginLeft(75,  @colomnPaddingWideScreen); }
+    .column.hoverPrevious.size-80  { .calculateHoverPreviousMarginLeft(80,  @colomnPaddingWideScreen); }
+    .column.hoverPrevious.size-85  { .calculateHoverPreviousMarginLeft(85,  @colomnPaddingWideScreen); }
+    .column.hoverPrevious.size-90  { .calculateHoverPreviousMarginLeft(90,  @colomnPaddingWideScreen); }
+    .column.hoverPrevious.size-95  { .calculateHoverPreviousMarginLeft(95,  @colomnPaddingWideScreen); }
+    .column.hoverPrevious.size-100 { .calculateHoverPreviousMarginLeft(100, @colomnPaddingWideScreen); }
+    
+    
+    .column {
+        z-index: 30;
+    }
+    .column.underPrevious.underSize-30 {
+        .calculateHoverPreviousMarginLeft(30, @colomnPaddingWideScreen);
+    }
+    .column.underPrevious.size-75.underSize-30 {
+        .getColumnWidth(75+30);       
+        z-index: 25;
+    }
+    
+    
+}
+
+/* Smaller than standard 960 (devices and browsers) */
+@media only screen and (max-width: 959px) {
+    .column {
+        padding: 0 @colomnPaddingSmallScreen;
+    }
+}
+
+
+
+/* Tablet Portrait size to standard 960 (devices and browsers) */
+@media only screen and (min-width: 768px) and (max-width: 959px) {
+    .column.hoverPrevious.size-1   { .calculateHoverPreviousMarginLeft(1,   @colomnPaddingSmallScreen); }
+    .column.hoverPrevious.size-5   { .calculateHoverPreviousMarginLeft(5,   @colomnPaddingSmallScreen); }
+    .column.hoverPrevious.size-10  { .calculateHoverPreviousMarginLeft(10,  @colomnPaddingSmallScreen); }
+    .column.hoverPrevious.size-15  { .calculateHoverPreviousMarginLeft(15,  @colomnPaddingSmallScreen); }
+    .column.hoverPrevious.size-20  { .calculateHoverPreviousMarginLeft(20,  @colomnPaddingSmallScreen); }
+    .column.hoverPrevious.size-25  { .calculateHoverPreviousMarginLeft(25,  @colomnPaddingSmallScreen); }
+    .column.hoverPrevious.size-30  { .calculateHoverPreviousMarginLeft(30,  @colomnPaddingSmallScreen); }
+    .column.hoverPrevious.size-35  { .calculateHoverPreviousMarginLeft(35,  @colomnPaddingSmallScreen); }
+    .column.hoverPrevious.size-40  { .calculateHoverPreviousMarginLeft(40,  @colomnPaddingSmallScreen); }
+    .column.hoverPrevious.size-45  { .calculateHoverPreviousMarginLeft(45,  @colomnPaddingSmallScreen); }
+    .column.hoverPrevious.size-50  { .calculateHoverPreviousMarginLeft(50,  @colomnPaddingSmallScreen); }
+    .column.hoverPrevious.size-55  { .calculateHoverPreviousMarginLeft(55,  @colomnPaddingSmallScreen); }
+    .column.hoverPrevious.size-60  { .calculateHoverPreviousMarginLeft(60,  @colomnPaddingSmallScreen); }
+    .column.hoverPrevious.size-65  { .calculateHoverPreviousMarginLeft(65,  @colomnPaddingSmallScreen); }
+    .column.hoverPrevious.size-70  { .calculateHoverPreviousMarginLeft(70,  @colomnPaddingSmallScreen); }
+    .column.hoverPrevious.size-75  { .calculateHoverPreviousMarginLeft(75,  @colomnPaddingSmallScreen); }
+    .column.hoverPrevious.size-80  { .calculateHoverPreviousMarginLeft(80,  @colomnPaddingSmallScreen); }
+    .column.hoverPrevious.size-85  { .calculateHoverPreviousMarginLeft(85,  @colomnPaddingSmallScreen); }
+    .column.hoverPrevious.size-90  { .calculateHoverPreviousMarginLeft(90,  @colomnPaddingSmallScreen); }
+    .column.hoverPrevious.size-95  { .calculateHoverPreviousMarginLeft(95,  @colomnPaddingSmallScreen); }
+    .column.hoverPrevious.size-100 { .calculateHoverPreviousMarginLeft(100, @colomnPaddingSmallScreen); }
+}
+
+
+
+/* All Mobile Sizes (devices and browser) */
+@media only screen and (max-width: 767px) {
+    body {
+        width: 100%;
+        overflow: auto;
+    }
+    .column {
+        width: auto;
+        height: auto;
+        float: none;
+        overflow: auto;
+    }
+    .column.hoverPrevious {
+        margin-left: 0;
+    }
+}
+
+
+/* Mobile Landscape Size to Tablet Portrait (devices and browsers) */
+@media only screen and (min-width: 480px) and (max-width: 767px) {}
+
+
+
+/* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
+@media only screen and (max-width: 479px) {
+    body {
+        font-size: 12px;
+    }
+}
